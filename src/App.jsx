@@ -21,13 +21,15 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+        {/* Button to increase count */}
         <button
           className="counter"
           onClick={() => setCount(count + 1)}
         >
-          Display Live Count Here: 
+          Display Live Count Here: {count}
         </button>
 
+        {/* Button to decrease count */}
         <button
           className="counter"
           onClick={() => setCount(count - 1)}
@@ -35,6 +37,7 @@ function App() {
           Decrease Count
         </button>
 
+        {/* Button to multiply count by -1 */}
         <button
           className="counter"
           onClick={() => setCount(count * -1)}
@@ -42,6 +45,7 @@ function App() {
           Multiply by -1
         </button>
 
+        {/* Button to multiply count by 10 */}
         <button
           className="counter"
           onClick={() => setCount(count * 10)}
