@@ -28,13 +28,26 @@ function App() {
           Display Live Count Here: 
         </button>
 
-        onClick={() => setCount(count - 1)}
+        <button
+          className="counter"
+          onClick={() => setCount(count - 1)}
+        >
+          Decrease Count
+        </button>
 
+        <button
+          className="counter"
+          onClick={() => setCount(count * -1)}
+        >
+          Multiply by -1
+        </button>
 
-        onClick={() => setCount(count * -1)}
-
-
-        onClick={() => setCount(count * 10)}
+        <button
+          className="counter"
+          onClick={() => setCount(count * 10)}
+        >
+          Multiply by 10
+        </button>
       </section>
 
       <div className="ticks"></div>
